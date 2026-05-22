@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecodeBot AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="chat-wrapper">
+        <div class="chat-container">
+            <header class="chat-header">
+                <div class="header-left">
+                    <div class="avatar header-avatar"><i class="fa-solid fa-robot"></i></div>
+                    <div class="bot-info">
+                        <h2>DecodeBot AI</h2>
+                        <span class="status">Online</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button id="theme-toggle" class="icon-btn" title="Toggle Theme">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <button id="clear-chat" class="icon-btn" title="Clear Chat">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            </header>
+
+            <main class="chat-box" id="chat-box">
+                <!-- Messages appended dynamically via script.js -->
+            </main>
+
+            <div class="input-area">
+                <div class="input-wrapper">
+                    <input type="text" id="user-input" placeholder="Message DecodeBot AI..." autocomplete="off">
+                    <button id="send-btn" title="Send Message"><i class="fa-solid fa-arrow-up"></i></button>
+                </div>
+                <div class="footer-text">DecodeBot AI can make mistakes. Consider verifying important information.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

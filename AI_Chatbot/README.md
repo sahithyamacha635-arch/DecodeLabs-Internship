@@ -1,3 +1,2 @@
-# AI Chatbot Project
-
-This is my DecodeLabs internship AI chatbot project.
+# Screenshots directory
+Place screenshots of the application here.
